@@ -83,6 +83,7 @@
         </nav>  
 		
 		<div class="tab-content col-md-9">
+			
 			<div class="tab-pane active" id="release_contest">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item">个人中心</li>
@@ -177,15 +178,57 @@
 			</div>
 
 			<div class="tab-pane fade" id="check_contest">
-			  <ol class="breadcrumb">
+			  	<ol class="breadcrumb">
 					<li class="breadcrumb-item">个人中心</li>
 					<li class="breadcrumb-item active">审核竞赛</li>
 				</ol>
 				<h2>审核竞赛</h2>
 				<p class="emptyLine"></p>
-				<div class="raw col-6">
-					
+				<div class="col-9">
+					<form class="form-inline">
+						<div class="row">
+						
+						<div class="form-group col-10">
+							<label for="check_state" >审核状态：</label>
+							<select class="form-control input-sm" id="check_state">
+								<option>全部</option>
+								<option>未审核</option>
+								<option>审核通过</option>
+								<option>审核失败</option>
+							</select>
+						</div>
+						<div class="col-2">
+						<button type="submit" class="btn btn-default">确定</button>
+						</div>
+						</div>
+					</form>
 				</div>
+				<p class="emptyLine"></p>
+				<p class="emptyLine"></p>
+				<p class="emptyLine"></p>
+				<p class="emptyLine"></p>
+				<table class="table">
+					<thead>
+						<th>#</th>
+						<th>名称</th>
+						<th>时间</th>
+						<th>审核状态</th>
+						<th>更多</th>
+						<th>审核</th>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>计算机设计大赛</td>
+							<td>2019.5.6</td>
+							<td>未审核</td>
+							<td>查看 编辑 </td>
+							<td>审核</td>
+						</tr>
+					</tbody>
+				</table>	
+				
 			</div>
 			
 			<div class="tab-pane fade" id="release_award">
