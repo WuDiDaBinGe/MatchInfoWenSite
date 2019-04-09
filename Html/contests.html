@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>全部赛事</title>
+	<link href="../CSS/bootstrap.min.css" rel="stylesheet">
+	<link href="../CSS/common.css" rel="stylesheet">
+	<link href="../CSS/contests.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+		<img src="../Imgs/logo.png" class="navbar-brand" alt=""/>
+        <a class="navbar-brand" href="#">竞赛信息网</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">首页 </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contests.html">比赛<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">获奖信息</a>
+            </li>
+          </ul>
+        </div>
+		  
+		<div class="my-2 my-md-0 nav-item dropdown">
+			<a href="" id="nav_login" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">登录</a>
+			<div class="dropdown-menu" aria-labelledby="nav_login">
+                <a class="dropdown-item" href="#">注销</a>
+                <a class="dropdown-item" href="#">个人中心</a>
+              </div>
+		</div>
+      </div>
+    </nav>
+	<!-- 中间内容 -->
+	<div class="raw col-7 wrap">
+		<div class="row col-12 title">
+			<span class="htitle col-10">最新比赛</span>
+		</div>
+		<!-- 筛选部分 -->
+		<div class="row col-12 ">
+			<div class="form-group col-4 ">
+				<label class="classtitle">赛事范围</label>
+				
+			</div>
+			
+			<div class="form-group col-4">
+				<label class="classtitle">赛事进度</label>
+			</div>
+			
+		</div>
+		
+		<div class="row col-12">
+			<div class="form-group col-4">
+				<select class="form-control">
+					<option>全部</option>
+					<option>国家级</option>
+					<option>省部级</option>
+				</select>
+			</div>
+			
+			<div class="form-group col-4">
+				<select class="form-control">
+					<option>全部</option>
+					<option>报名中</option>
+					<option>进行中</option>
+					<option>已截止</option>
+				</select>
+			</div>
+			
+			<div class="col-4">
+				<button type="button" class="btn btn-outline-success" id="btn_classer">确定</button>
+			</div>
+		</div>
+		
+		<!-- 比赛信息列表 -->
+		<div class="row col-12">
+			<div class="card img-fluid">
+				<img class="card-img-top" src="../Imgs/match_pictures.jpg" alt="">
+			<div class="card-body">
+				<a href="one_contest.html"><h6 class="card-title"><b>计算机设计大赛</b></h6> </a>
+				<p class="card-text">主办单位：江西省教育厅</p>
+				<p class="card-text">负责人：XXX老师     电话：15180450364</p>
+				<p class="card-text">报名截止时间：2019年5月1日</p>
+			</div>
+			</div>
+
+			<div class="card img-fluid">
+				<img class="card-img-top" src="../Imgs/match_pictures.jpg" alt="">
+			<div class="card-body">
+				<a href="one_contest.html"><h6 class="card-title"><b>蓝桥杯</b></h6></a>
+				<p class="card-text">主办单位：江西省教育厅</p>
+				<p class="card-text">负责人：XXX老师     电话：15180450364</p>
+				<p class="card-text">报名截止时间：2019年5月1日</p>
+			</div>
+			</div>
+
+			<div class="card img-fluid">	
+				<img class="card-img-top" src="../Imgs/match_pictures.jpg" alt="">
+			<div class="card-body">
+				<a href="one_contest.html"><h5 class="card-title"><b>计算机作品大赛</b></h5></a>
+				<p class="card-text">主办单位：江西省教育厅</p>
+				<p class="card-text">负责人：XXX老师     电话：15180450364</p>
+				<p class="card-text">报名截止时间：2019年5月1日</p>
+			</div>
+			</div>
+
+			<div class="card img-fluid">	
+				<img class="card-img-top" src="../Imgs/match_pictures.jpg" alt="">
+			<div class="card-body">
+				<a href="one_contest.html"><h5 class="card-title"><b>计算机作品大赛</b></h5></a>
+				<p class="card-text">主办单位：江西省教育厅</p>
+				<p class="card-text">负责人：XXX老师     电话：15180450364</p>
+				<p class="card-text">报名截止时间：2019年5月1日</p>
+			</div>
+			</div>
+		
+			<!-- 分页以及页数信息 -->
+			<div class="row col-12 pagesInfo">
+				<div class="col-4">
+				</div>
+				<div class="col-4 container">
+					<a href="#" class="ele_pageInfo">首页</a>
+					<input type="text" id="cur_page" class="ele_pageInfo"/>/
+					<span id="totalPage" class="ele_pageInfo">1</span>
+					<a href="#" class="ele_pageInfo">尾页</a>
+					<select class="ele_pageInfo">
+						<option>6/页</option>
+						<option>12/页</option>
+						<option>24/页</option>
+					</select>
+					<button type="button" class="btn btn-primary ele_pageInfo btn-sm">Go</button>
+				</div>
+				<div class="col-4" id="pageSummary">
+					共1页，4条
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- footer代码 -->
+	<div class="col-12 lowest">
+	<footer class="container py-5 col-6">
+      <div class="row">
+        <div class="col-6 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>学生</h5>
+          <ul class="list-unstyled text-small">
+			<li><a class="text-muted" href="#">登录</a></li>
+            <li><a class="text-muted" href="#">我的获奖</a></li>
+            <li><a class="text-muted" href="#">我的审核</a></li>
+          </ul>
+        </div>
+		<div class="col-6 col-md">
+          <h5>我是教师</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">登录</a></li>
+            <li><a class="text-muted" href="#">审核信息</a></li>
+            <li><a class="text-muted" href="#">发布比赛</a></li>
+        	<li><a class="text-muted" href="#">发布获奖</a></li>  
+		</ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>友情链接</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">我爱竞赛网</a></li>
+            <li><a class="text-muted" href="#">竞赛网</a></li>
+            <li><a class="text-muted" href="#">软件学院官网</a></li>
+          </ul>
+        </div>
+      </div>
+	</footer>
+	</div>
+	<!-- Js代码 -->
+	<script src="../Js/jquery-3.3.1.min.js"></script>
+	<script src="../Js/bootstrap.min.js"></script>
+</body>
+</html>

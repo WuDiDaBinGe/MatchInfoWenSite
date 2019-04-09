@@ -1,0 +1,62 @@
+/* CSS Document */
+
+.title{
+	margin-top: 50px;
+}
+
+.htitle{
+	display: block;
+	padding: auto 0;
+	font-size: 25px;
+	text-align: left;
+	font-weight: 700;
+}
+
+.classtitle{
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 650;
+}
+
+/*比赛信息列表*/
+
+.card{
+	width: 32%;
+	margin-left: 12px;
+	background-color:#EEEEEE;
+	margin-top: 15px;
+	display: inline-block;
+}
+.card a{
+	display: block;
+}
+.card-title{
+	font-family:"楷体";
+	font-size: 1em;
+}
+.card-text{
+	font-size: .5em;
+}
+.card-deck{
+	margin-top: 15px;
+}
+/*分页显示*/
+.pagesInfo{
+	margin-top: 50px;
+}
+.ele_pageInfo{
+	display: inline-block;
+	
+}
+#cur_page{
+	width: 46px;
+	border-radius: 4px;
+    border: 1px solid #dcdfe6;
+	font-size: 14px;
+    color: #444;
+    padding: 0;
+	text-align: center;
+}
+#pageSummary{
+	text-align: right;
+}

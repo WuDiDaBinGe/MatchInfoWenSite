@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+	<link href="../CSS/bootstrap.min.css" rel="stylesheet">
+	<link href="../CSS/common.css" rel="stylesheet">
+	<link href="../CSS/info.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+		<img src="../Imgs/logo.png" class="navbar-brand" alt=""/>
+        <a class="navbar-brand" href="#">竞赛信息网</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">首页 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contests.html">比赛</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">获奖信息</a>
+            </li>
+          </ul>
+        </div>
+		  
+		<div class="my-2 my-md-0 nav-item dropdown">
+			<a href="" id="nav_login" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">登录</a>
+			<div class="dropdown-menu" aria-labelledby="nav_login">
+                <a class="dropdown-item" href="#">注销</a>
+                <a class="dropdown-item" href="#">个人中心</a>
+          </div>
+		</div>
+      </div>
+    </nav>
+	<p class="emptyLine"></p>
+	<p class="emptyLine"></p>
+	<p class="emptyLine"></p>
+	<div class="col-9 wrap">
+		
+	<div class="row">
+		<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+			<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>竞赛信息发布&amp;审核</span>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#release_contest" data-toggle="tab">
+                  
+                  发布竞赛 <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#check_contest" data-toggle="tab">
+           
+                  审核竞赛
+                </a>
+              </li>
+			<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>获奖信息发布&amp;审核</span>
+            </h6>
+              <li class="nav-item">
+                <a class="nav-link" href="#release_award" data-toggle="tab">
+                  发布获奖
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#check_award" data-toggle="tab">
+                  审核获奖
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>  
+		
+		<div class="tab-content col-md-9">
+			<div class="tab-pane active" id="release_contest">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">个人中心</li>
+					<li class="breadcrumb-item active">发布竞赛</li>
+				</ol>
+				<h2>发布竞赛</h2>
+				<p class="emptyLine"></p>
+				<div class="raw col-6">
+				<div class="col-12" id="step1">
+					<form>
+						<div class="form-group">
+							<label for="name" class="text-dark">竞赛名称：</label>
+							<input type="test"  class="form-control" id="name">
+						</div>
+						
+						<div class="form-group">
+							<label for="time_start_bm">报名开始时间：</label>
+							<label class="inline"><input type="date"  class="form-control" id="time_start_bm"></label>
+						</div>
+						
+						<div class="form-group">
+							<label for="time_end_bm">报名结束时间：</label>
+							<label class="inline"><input type="date"  class="form-control" id="time_end_bm"></label>
+						</div>
+						
+						<div class="form-group">
+							<label for="host_name" class="text-dark">主办方：</label>
+							<input type="test"  class="form-control" id="host_name">
+						</div>
+						
+						<div class="form-group">
+							<label for="level" class="text-dark">级别：</label>
+							<label class="form-check-inline">
+								<select class="form-control ">
+									<option>国家级</option>
+									<option>省部级</option>
+								</select>
+							</label>
+						</div>
+						
+						<div class="form-group">
+							<label for="level" class="text-dark">比赛官网:</label>
+							<input type="url" class="form-control">
+						</div>
+						
+						<div class="form-group">
+							<label for="resp_name" class="text-black">负责人：</label>
+							<input type="text" class="form-control" id="resp_name">
+						</div>
+						
+						<div class="form-group">
+							<label for="resp_contact" class="text-black">负责人联系方式：</label>
+							<input type="text" class="form-control" id="resp_contact">
+						</div>
+						
+						<div class="form-group">
+							<button type="button" class="btn btn-primary" id="btn_down">下一步</button>
+						</div>
+					</form>
+				</div>
+				
+				<div class="col-12" id="step2">
+					<form>
+						<div class="form-group">
+							<label  class="text-dark">竞赛简介</label>
+							<textarea class="form-control" rows="4" id="match_intro"></textarea>
+						</div>
+						
+						<div class="form-group">
+							<label>组织机构</label>
+							<textarea class="form-control" rows="3" id="match_institution"></textarea>
+						</div>
+						<dv class="form-group">
+							<label>竞赛时间</label>
+							<textarea class="form-control" rows="2" id="match_times"></textarea>
+						</dv>
+						<div class="form-group">
+							<label>奖项设置</label>
+							<textarea class="form-control" rows="2" id="match_prizes"></textarea>
+						</div>
+						<div class="form-group">
+							<label>联系方式</label>
+							<textarea class="form-control" rows="3" id="match_contact"></textarea>
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary" id="btn_up">上一步</button>
+							<button type="button" class="btn btn-primary" id="btn_submit">发布竞赛</button>
+						</div>
+					</form>
+				</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="check_contest">
+			  <ol class="breadcrumb">
+					<li class="breadcrumb-item">个人中心</li>
+					<li class="breadcrumb-item active">审核竞赛</li>
+				</ol>
+				<h2>审核竞赛</h2>
+				<p class="emptyLine"></p>
+				<div class="raw col-6">
+					
+				</div>
+			</div>
+			
+			<div class="tab-pane fade" id="release_award">
+				<h2>发布获奖</h2>
+			</div>
+
+			<div class="tab-pane fade" id="check_award">
+			  <h2>审核获奖</h2>
+			</div>
+		</div>
+	</div>
+	</div> 
+	
+	<!-- footer代码 -->
+	<div class="col-12 lowest">
+	<footer class="container py-5 col-6">
+      <div class="row">
+        <div class="col-6 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>学生</h5>
+          <ul class="list-unstyled text-small">
+			<li><a class="text-muted" href="#">登录</a></li>
+            <li><a class="text-muted" href="#">我的获奖</a></li>
+            <li><a class="text-muted" href="#">我的审核</a></li>
+          </ul>
+        </div>
+		<div class="col-6 col-md">
+          <h5>我是教师</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">登录</a></li>
+            <li><a class="text-muted" href="#">审核信息</a></li>
+            <li><a class="text-muted" href="#">发布比赛</a></li>
+        	<li><a class="text-muted" href="#">发布获奖</a></li>  
+		</ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>友情链接</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">我爱竞赛网</a></li>
+            <li><a class="text-muted" href="#">竞赛网</a></li>
+            <li><a class="text-muted" href="#">软件学院官网</a></li>
+          </ul>
+        </div>
+      </div>
+	</footer>
+	</div>
+	<!-- Js代码 -->
+	<script src="../Js/jquery-3.3.1.min.js"></script>
+	<script src="../Js/popper.min.js"></script>
+	<script src="../Js/bootstrap.min.js"></script>
+	<script src="../Js/tea_info.js"></script>
+
+</body>
+</html>

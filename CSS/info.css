@@ -1,0 +1,32 @@
+/* CSS Document */
+
+
+
+.sidebar .nav-link {
+  font-weight: 600;
+  color: #333;
+}
+
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+/*面包屑导航*/
+.breadcrumb{
+	background-color: #FFFFFF;
+	border-bottom:#B1B1B1 solid;
+}
+/*表单*/
+#step2{
+	display: none;
+}

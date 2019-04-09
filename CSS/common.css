@@ -1,0 +1,68 @@
+/* CSS Document */
+
+p{
+	word-break:break-all;
+	word-wrap:break-word;
+}
+a {
+    color: #4C4C4C;
+    text-decoration: none;
+}
+ul,li,ol{
+	list-style-type:none;
+}
+
+.wrap{
+	margin: 0 auto;
+}
+
+
+body {
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+#navbarsExample07 .nav-link:focus,#navbarsExample07 .nav-link:hover #navbarsExample07 .nav-link:active{
+	border-bottom: 2px solid #40ADEB;
+}
+.navbar-brand{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#navbarsExample07 ul li a{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#navbarsExample07 ul li {
+	margin-left: 50px;
+}
+
+#nav_login{
+	font-size: 18px;
+	font-weight: 400;
+	
+}
+.lowest{
+	background-color: #fafafa;
+}
+.emptyLine{
+	display: block;
+	margin-top: 25px;
+}
+footer {
+  margin-top: 30px;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+p{
+	display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
