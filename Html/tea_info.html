@@ -223,24 +223,218 @@
 							<td>计算机设计大赛</td>
 							<td>2019.5.6</td>
 							<td><span class="badge badge-secondary state">未审核</span></td>
-							<td>查看 编辑 </td>
-							<td>取消审核 审核通过</td>
+							<td><a href="#" data-toggle="modal" data-target="#Modal_Matach_Info"><img src="../Imgs/icons/edit.png" alt="">编辑并查看</a></td>
+							
+							<div class="modal fade bd-example-modal-lg" id="Modal_Matach_Info">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+
+									  <!-- 模态框头部 -->
+									  <div class="modal-header">
+										<h4 class="modal-title">编辑并查看比赛信息</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									  </div>
+
+									  <!-- 模态框主体 -->
+									
+									<div class="modal-body">
+										<div class="row col-8">
+										<div class="col-10" id="Modal_step1">
+											<form>
+												<div class="form-group">
+													<label for="m_name" class="text-dark">竞赛名称：</label>
+													<input type="test"  class="form-control" id="m_name">
+												</div>
+
+												<div class="form-group">
+													<label for="m_time_start_bm">报名开始时间：</label>
+													<label class="inline"><input type="date"  class="form-control" id="m_time_start_bm"></label>
+												</div>
+
+												<div class="form-group">
+													<label for="m_time_end_bm">报名结束时间：</label>
+													<label class="inline"><input type="date"  class="form-control" id="m_time_end_bm"></label>
+												</div>
+
+												<div class="form-group">
+													<label for="m_host_name" class="text-dark">主办方：</label>
+													<input type="test"  class="form-control" id="m_host_name">
+												</div>
+
+												<div class="form-group">
+													<label for="m_level" class="text-dark">级别：</label>
+													<label class="form-check-inline">
+														<select class="form-control " id="m_level">
+															<option>国家级</option>
+															<option>省部级</option>
+														</select>
+													</label>
+												</div>
+
+												<div class="form-group">
+													<label for="m_url" class="text-dark">比赛官网:</label>
+													<input type="url" class="form-control" id="m_url">
+												</div>
+
+												<div class="form-group">
+													<label for="m_resp_name" class="text-black">负责人：</label>
+													<input type="text" class="form-control" id="m_resp_name">
+												</div>
+
+												<div class="form-group">
+													<label for="m_resp_contact" class="text-black">负责人联系方式：</label>
+													<input type="text" class="form-control" id="m_resp_contact">
+												</div>
+
+												<div class="form-group">
+													<button type="button" class="btn btn-primary" id="m_btn_down">下一步</button>
+												</div>
+											</form>
+										</div> 
+										
+										<div class="col-10" id="Modal_step2">
+											<form>
+												<div class="form-group">
+													<label  class="text-dark">竞赛简介</label>
+													<textarea class="form-control" rows="4" id="m_match_intro"></textarea>
+												</div>
+
+												<div class="form-group">
+													<label>组织机构</label>
+													<textarea class="form-control" rows="3" id="m_match_institution"></textarea>
+												</div>
+												<dv class="form-group">
+													<label>竞赛时间</label>
+													<textarea class="form-control" rows="2" id="m_match_times"></textarea>
+												</dv>
+												<div class="form-group">
+													<label>奖项设置</label>
+													<textarea class="form-control" rows="2" id="m_match_prizes"></textarea>
+												</div>
+												<div class="form-group">
+													<label>联系方式</label>
+													<textarea class="form-control" rows="3" id="m_match_contact"></textarea>
+												</div>
+												<div class="form-group">
+													<button type="button" class="btn btn-primary" id="m_btn_up">上一步</button>
+													<button type="button" class="btn btn-primary" id="m_btn_submit">修改完成</button>
+												</div>
+											</form>
+										</div>
+										</div>
+										
+									</div>
+
+									<!-- 模态框底部 -->
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+									</div>
+			
+									</div>
+								  </div>
+							</div>
+							<td><button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#Modal_check">审核</button></td>
+							<div class="modal fade" id="Modal_check">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+									  <!-- 模态框头部 -->
+									  <div class="modal-header">
+										<h4 class="modal-title">请选择</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									  </div>
+
+									  <!-- 模态框主体 -->
+									  <div class="modal-body">
+										 <h3>审核是否通过</h3>
+										  <form>
+										  	<button class="btn btn-primary">通过审核</button>
+											<button class="btn btn-primary">不通过审核</button>
+										  </form>
+										
+									  </div>
+
+									  <!-- 模态框底部 -->
+									  <div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+									  </div>
+
+									</div>
+								  </div>
+							</div>
 						</tr>
 						<tr>
 							<td>2</td>
 							<td>计算机设计大赛</td>
 							<td>2019.5.6</td>
 							<td><span class="badge badge-success state">审核通过</span></td>
-							<td>查看 编辑 </td>
-							<td>取消审核</td>
+							<td><a href="#" data-toggle="modal" data-target="#Modal_Matach_Info"><img src="../Imgs/icons/edit.png" alt="">编辑并查看</a></td>
+							<td><button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#Modal_cancel">撤销审核</button></td>
+							<div class="modal fade" id="Modal_cancel">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+									  <!-- 模态框头部 -->
+									  <div class="modal-header">
+										<h4 class="modal-title">是否取消审核</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									  </div>
+
+									  <!-- 模态框主体 -->
+									  <div class="modal-body">
+										 
+										  <form>
+										  	<button class="btn btn-primary">是</button>
+											<button class="btn btn-primary" data-dismiss="modal">否</button>
+										  </form>
+										
+									  </div>
+
+									  <!-- 模态框底部 -->
+									  <div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+									  </div>
+
+									</div>
+								  </div>
+							</div>
 						</tr>
 						<tr>
 							<td>3</td>
 							<td>计算机设计大赛</td>
 							<td>2019.5.6</td>
 							<td><span class="badge badge-danger state">审核失败</span></td>
-							<td>查看 编辑 </td>
-							<td>审核通过</td>
+							<td><a href="#" data-toggle="modal" data-target="#Modal_Matach_Info"><img src="../Imgs/icons/edit.png" alt="">编辑并查看</a></td>
+							<td><button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#Modal_pass">通过审核</button></td>
+							
+							<div class="modal fade" id="Modal_pass">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+									  <!-- 模态框头部 -->
+									  <div class="modal-header">
+										<h4 class="modal-title">是否通过审核</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									  </div>
+
+									  <!-- 模态框主体 -->
+									  <div class="modal-body">
+										 
+										  <form>
+										  	<button class="btn btn-primary">是</button>
+											<button class="btn btn-primary" data-dismiss="modal">否</button>
+										  </form>
+										
+									  </div>
+
+									  <!-- 模态框底部 -->
+									  <div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+									  </div>
+
+									</div>
+								  </div>
+							</div>
 						</tr>
 					</tbody>
 				</table>	
@@ -248,11 +442,49 @@
 			</div>
 			
 			<div class="tab-pane fade" id="release_award">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">个人中心</li>
+					<li class="breadcrumb-item active">发布获奖</li>
+				</ol>
 				<h2>发布获奖</h2>
+				<p class="emptyLine"></p>
+				<div class="col-7">
+					<form>
+						<div class="form-group">
+							<label for="prize_people">获奖人（队伍）</label>
+							<input type="text" class="form-control" id="prize_people">
+						</div>
+						<div class="form-group">
+							<label for="">获奖比赛名称</label>
+							<input type="text" class="form-control" id="prize_match">
+						</div>
+						<div class="form-group">
+							<label for="prize_teacher">指导教师</label>
+							<input type="text" class="form-control" id="prize_teacher">
+						</div>
+						<div class="form-group">
+							<label for="prize_date">获奖时间</label>
+							<input type="date" class="form-control" id="prize_date">
+						</div>
+						<div class="form-group">
+							<label for="prize_level">获得奖项</label>
+							<input type="text" class="form-control" id="prize_level">
+						</div>
+						<button type="submit" class="btn btn-primary">发布</button>
+					</form>
+				</div>
 			</div>
 
 			<div class="tab-pane fade" id="check_award">
-			  <h2>审核获奖</h2>
+			  	<ol class="breadcrumb">
+					<li class="breadcrumb-item">个人中心</li>
+					<li class="breadcrumb-item active">获奖审核</li>
+				</ol>
+				<h2>获奖审核</h2>
+				<p class="emptyLine"></p>
+				<div class="col-7">
+					
+				</div>
 			</div>
 		</div>
 	</div>
